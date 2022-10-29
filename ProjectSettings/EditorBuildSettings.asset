@@ -14,5 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_1.unity
     guid: 441b445a66eb06a43a87b2acb394d5d9
+  - enabled: 1
+    path: Assets/Scenes/MainScreen.unity
+    guid: c49301a31e5bb524ea8bf28fb14bc681
+  - enabled: 1
+    path: Assets/Scenes/Clicker.unity
+    guid: e87ec99d2bdb0434a8eef8aff23df1af
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 9fdf61b3fb121354ab061225a1c08c71, type: 2}

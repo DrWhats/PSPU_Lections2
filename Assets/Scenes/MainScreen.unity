@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 167459717}
   - component: {fileID: 167459716}
   - component: {fileID: 167459715}
+  - component: {fileID: 167459718}
+  - component: {fileID: 167459719}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -206,7 +208,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 167459716}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 167459719}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: Login
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &167459716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +259,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167459713}
   m_CullTransparentMesh: 1
+--- !u!95 &167459718
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167459713}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d793eabd7183888458fbbf3303369171, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &167459719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167459713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39150730e53dc9d44acb3f8bfb39b5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  login: test
+  password: test2
+  Scene_id: 3
 --- !u!1 &388962374
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 1"
+  m_text: "\u0418\u0433\u0440\u0430 Clicker"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 144a077236b41c44ca487257db906d33, type: 2}
   m_sharedMaterial: {fileID: -7383547212269650595, guid: 144a077236b41c44ca487257db906d33, type: 2}
@@ -555,6 +604,7 @@ GameObject:
   - component: {fileID: 809642423}
   - component: {fileID: 809642422}
   - component: {fileID: 809642421}
+  - component: {fileID: 809642424}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -665,6 +715,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809642419}
   m_CullTransparentMesh: 1
+--- !u!95 &809642424
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809642419}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d793eabd7183888458fbbf3303369171, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &812330469
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,6 +881,7 @@ GameObject:
   - component: {fileID: 1013566688}
   - component: {fileID: 1013566690}
   - component: {fileID: 1013566689}
+  - component: {fileID: 1013566691}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -867,8 +938,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294243583
+  m_fontColor: {r: 1, g: 0.9576329, b: 0.9576329, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -935,6 +1006,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013566687}
   m_CullTransparentMesh: 1
+--- !u!95 &1013566691
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013566687}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b02504dd6f8b9ae499a1e87047856e3a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1068937267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,6 +1466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1527,6 +1619,7 @@ GameObject:
   - component: {fileID: 2131651862}
   - component: {fileID: 2131651861}
   - component: {fileID: 2131651860}
+  - component: {fileID: 2131651863}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -1637,3 +1730,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131651858}
   m_CullTransparentMesh: 1
+--- !u!95 &2131651863
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131651858}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d793eabd7183888458fbbf3303369171, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
